@@ -1,0 +1,26 @@
+README
+Kompilacja makefile
+Uruchamianie programu
+./raymarching pliksceny.ray (-cpu)
+Przykładowa scena znajduje sie w pliku simple.ray
+!!! Prymitywy: trójkąty nie zostały jeszcze zaimplementowane
+
+Sterowanie:
+q - wyjście
+e - zwiększ Supersampling
+s - przesuń kamęrę w dół
+w - przesuń kamerę w górę
+d - przesuń kamerę w prawo
+a - przesuń kamerę w lewo
+p - przesuń kamerę do przodu
+l - przesuń kamerę do tyłu
+  if (k==27 || k=='q' || k=='Q') exit(1);
+    if (k=='E' || k == 'e') SUPERSAMPLING = (SUPERSAMPLING +1)%3;
+	  switch(k) {
+		  case 's': case 'S': cam.location= cam.location -cam.up * 6; break;
+		  case 'w': case 'W' :cam.location = cam.location +cam.up * 6; break;
+		  case 'd': case 'D': cam.location= cam.location + cam.right * 6; break;
+		  case 'a': case'A':  cam.location =cam.location - cam.right * 6; break;
+		  case 'p': case 'P': cam.location = cam.location + cam.front * 6; break;
+		  case 'l': case 'L':cam.location= cam.location - cam.front * 6; break;
+	  }

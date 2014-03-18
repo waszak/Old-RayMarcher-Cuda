@@ -1,0 +1,100 @@
+//Komentarz
+Scene
+{
+  Width 640
+  Height 480   
+  NumberOfMaterials 3 
+  NumberOfSpheres 3
+  NumberOfTriangles 1
+  NumberOfLights 2
+}
+//Material
+Material 0
+{
+  Diffuse 1.0 1.0 0.0
+  Reflection 0.5
+  Specular 1.0 1.0 1.0
+  Power 60
+}
+
+Material 1
+{
+  Diffuse 0.0 1.0 1.0
+  Reflection 0.5
+  Specular 1.0 1.0 1.0
+  Power 60
+}
+
+Material 2
+{
+  Diffuse 1.0 0.0 1.0
+  Reflection 0.5
+  Specular 1.0 1.0 1.0
+  Power 60
+}
+/////////////////////////////////////// 
+Sphere 0
+{
+  Center 233.0 290.0 0.0
+  Size 100.0
+  MaterialId 0
+}
+
+Sphere 1
+{
+  Center 407.0 290.0 0.0
+  Size 100.0
+  MaterialId 1
+}
+
+Sphere 2
+{
+  Center 320.0 140.0 0.0  
+  Size 100.0
+  MaterialId 2
+}
+
+Triangle 0
+{
+  A 233.0 290.0 0
+  B 407.0 290.0 0
+  C 320.0 140.0 0
+  MaterialId 1
+}
+
+
+Light 0
+{
+  Position 0.0 240.0 -100.0  
+  Intensity 1.0 1.0 1.0
+}
+
+Light 1
+{
+  Position  640.0 240.0 -10000.0 
+  Intensity  1.0 0.7 1.0
+}
+
+
+Sphere 0
+{
+  Center 400.0 290.0 320.0
+  Size 50.0
+  MaterialId 0
+}
+
+Sphere 1
+{
+  Center 600.0 290.0 480.0
+  Size 100.0
+  MaterialId 1
+}
+
+Sphere 2
+{
+  Center 450.0 140.0 400.0
+  Size  50.0
+  MaterialId  2
+}
+
+
